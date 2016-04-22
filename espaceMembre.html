@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EspaceMembre</title>
+	</head>
+	<body>
+
+	<style>
+
+		div.center{
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		button{
+			border-color: red;
+			border-radius: 20%;
+		}
+
+	</style>
+
+	<script>
+		
+		var alertKey = prompt('Votre clé secret : ');
+		console.log(alertKey);
+
+		if(alertKey != '1234') {
+			window.location.assign('indexError.html');
+		}else {
+			window.location.assign('membreSpace.html');
+		}
+
+	</script>
+
+	<div class="center">
+
+		<p>Ceci est du contenu reservé au premium</p>
+		
+		<button onclick="window.location.assign('index.html')">Accueil</button>
+
+	</div>
+
+	</body>
+</html>

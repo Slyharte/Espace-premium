@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>premium</title>
+	</head>
+	<body>
+
+	<style>
+
+		div.center{
+			font-family: sans-serif;
+			text-align: center;
+		}
+
+		div.alert{
+			font-family: serif;
+			text-align: center;
+			border-radius: 100px;
+			border-color: red;
+			background-color: orange;
+		}
+
+		button{
+			border-color: red;
+			border-radius: 20%;
+		}
+
+	</style>
+
+	<script src="jquery.js"></script>
+
+	<script>
+		
+	$(function(e) {
+		
+		$('#btn-close').click(function(e) {
+			
+			$('.alert').hide();
+
+		});
+
+	});
+
+	</script>
+
+	<div class="alert">
+		<p>Le code premium n'est pas valide</p>
+		<button id="btn-close">Fermer</button>
+	</div>
+
+	<div class="center">
+
+	<h3>Reessayer</h3>
+
+	<button onclick="window.location.assign('espaceMembre.html')">Espace premium</button>
+
+	<p> </p>
+
+	<button onclick="window.location.assign('index.html')">Accueil</button>
+
+	</div>
+
+	</body>
+</html>

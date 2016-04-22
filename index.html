@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>premium</title>
+	</head>
+	<body>
+
+	<script src="jquery.js"></script>
+
+	<script>
+		
+	$(function(e) {
+		
+		$('#buy_btn').click(function(e) {
+			
+			$('.show_after').text("L'achat a bien été effectué");
+
+			$('.secret_key').text("Voici votre code secret : 1234");
+
+		});
+
+	});
+
+	</script>
+
+	<style>
+
+	div.center{
+		font-family: sans-serif;
+		text-align: center;
+	}
+
+	button{
+			border-color: red;
+			border-radius: 20%;
+	}
+
+	</style>
+
+	<div class="center">
+		
+		<h1>Souscrire à l'offre premium</h1>
+			
+		<label>Pseudo</label>
+		<p> </p>
+			<input type="text">
+		<p> </p>
+		<label>Mot de passe</label>
+		<p> </p>
+			<input type="password">
+		<p> </p>
+		<button id="buy_btn">Payer</button>
+		<p> </p>
+
+		<p class="show_after"></p>
+
+		<p class="secret_key"></p>
+
+		<p> </p>
+
+		<button onclick="window.location.assign('espaceMembre.html')">Accéder à l'expace membre</button>
+
+	</div>
+
+	</body>
+</html>
